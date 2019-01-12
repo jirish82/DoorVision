@@ -9,10 +9,10 @@ video_capture = cv2.VideoCapture(0)
 josh_image = face_recognition.load_image_file("/home/josh/Downloads/josh-irish/front.jpg")
 josh_face = face_recognition.face_encodings(josh_image)[0]
 charlotte_image = face_recognition.load_image_file("/home/josh/Downloads/charlotte-bundy/front.jpg")
-biden_face_encoding = face_recognition.face_encodings(charlotte_image)[0]
+charlotte_face = face_recognition.face_encodings(charlotte_image)[0]
 dan_image = face_recognition.load_image_file("/home/josh/Downloads/dan.jpg")
 dan_face = face_recognition.face_encodings(dan_image)[0]
-faces = [josh_face,biden_face_encoding,dan_face]
+faces = [josh_face,charlotte_face,dan_face]
 names = ["Josh","Charlotte","Dan"]
 
 #save video
